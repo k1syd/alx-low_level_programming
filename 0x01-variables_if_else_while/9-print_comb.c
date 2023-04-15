@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 /**
- * main -  program that prints all the numbers of base 16 in lowercase
+ * main -  program that prints all possible combinations of single-digit
+ * Numbers must be separated by ,followed by a space
+ * Numbers should be printed in ascending order
  * You can only use the putchar function
  * Return: 0
  */
 
 int main(void)
 {
-int n = 48;
-int l = 'a';
-while (n <= 57)
-{
-putchar(n);
-n += 1;
-}
-while (l <= 'f')
-{
-putchar(l);
-l++;
-}
-putchar('\n');
-return (0);
+  int i, com = 44;
+  for (i = 48; i <= 57; i++) {
+    putchar(i);
+    if (i != 57) {
+      putchar(com);
+    }
+  }
+  putchar('\n');
+  return(0);
 }
