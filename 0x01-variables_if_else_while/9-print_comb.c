@@ -7,11 +7,10 @@
  * You can only use the putchar function
  * Return: 0
  */
-
 int main(void)
 {
 	int i, com = 44, spe = 32;
-	
+
 	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
